@@ -31,13 +31,18 @@ h2, h3 {
     font-family: 'Cooper Hewit Bold' ;
 }
 
+.rendered_html strong {
+    font-family: 'Cooper Hewit Bold' ;   
+}
+
 .text_cell_render p,
 .text_cell_render h2,
 .text_cell_render h3,
 .text_cell_render h4,
 .text_cell_render ul,
 .text_cell_render ol,
-.text_cell_render table {
+.text_cell_render table,
+.text_cell_render pre {
     max-width: 860px;
     margin: 0 auto;
     line-height: 30px;
@@ -55,6 +60,23 @@ h2, h3 {
 .text_cell_render h4 {
     font-size: 20px;
     text-align: center;
+}
+
+.rendered_html pre,
+.rendered_html code {
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #f9f9f9;
+    padding: 8px;
+}
+
+.rendered_html code:not(.cm-s-ipython) {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
 }
 
 .text_cell.rendered .input_prompt {
@@ -86,6 +108,12 @@ h2, h3 {
 .CodeMirror pre {
     font-size: 20px;
     line-height: 28px;
+}
+
+code.language-bash {
+    # text-align: center;
+    margin: 0 auto;
+    display: block;
 }
 
 div.output_text pre {
