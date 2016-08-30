@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from IPython.core.display import display, HTML
 display(HTML("""<style>
 
