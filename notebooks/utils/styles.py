@@ -32,7 +32,8 @@ h2, h3 {
 }
 
 .rendered_html strong {
-    font-family: 'Cooper Hewit Bold' ;   
+    font-family: 'Cooper Hewit Bold' ; 
+    font-weight: bold;
 }
 
 .text_cell_render p,
@@ -110,12 +111,6 @@ h2, h3 {
     line-height: 28px;
 }
 
-code.language-bash {
-    # text-align: center;
-    margin: 0 auto;
-    display: block;
-}
-
 div.output_text pre {
     color: #333;
     font-size: 18px;
@@ -127,4 +122,41 @@ div.output_text pre {
     display: block;
     min-width: 600px;
 }
+
+.rendered_html blockquote cite:before {
+    content: '— ';
+}
+.rendered_html blockquote p:before {
+    content: "“";
+    font-size: 160px;
+    color: rgba(218, 218, 218, 0.68);
+    position: relative;
+    margin-left: -72px;
+    top: 32px;
+    left: 37px;
+    font-family: Cooper Hewitt Bold;
+    z-index: 0;
+}
+.rendered_html blockquote {
+    clear: both;
+    border: none;
+}
+
+.rendered_html blockquote p:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+
+}
+
+.rendered_html blockquote cite {
+    display: block;
+    padding-left: 30%;
+    padding-right: 10%;
+    text-align: right;
+    margin-top: 12px;
+}
+
 </style>"""))
