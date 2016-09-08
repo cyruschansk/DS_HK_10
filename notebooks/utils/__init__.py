@@ -4,7 +4,7 @@ import os
 import qgrid
 
 def download_data(filename, force=False):
-    prefix = "https://s3.amazonaws.com/ga-ds/"
+    prefix = "https://s3-us-west-2.amazonaws.com/ga-ds/"
     dest_dir = 'data'
 
     path = '/'.join([dest_dir,filename])
